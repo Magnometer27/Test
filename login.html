@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mayvene - Spreading knowledge, life experiences, and gaining a better understanding of the universe around us</title>
+    <link rel="stylesheet" href="login_style.css">
+</head>
+
+<body>
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            appId            : '1129229844400968',
+            autoLogAppEvents : true,
+            xfbml            : true,
+            version          : 'v15.0'
+          });
+        };
+      </script>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v15.0&appId=1129229844400968&autoLogAppEvents=1" nonce="eFcDDiF2"></script>
+    <h1>Mayvene</h1>
+    <p>Spreading knowledge, life experiences, and gaining a better understanding of the universe around us</p>
+
+    <h2>Log in</h2>
+    <div class="fb-login-button" data-width="" data-size="medium" data-button-type="login_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="false"></div>
+    <button id="google-button">Log in with Google</button>
+    <button id="twitter-button">Log in with Twitter</button>
+
+    <h3>Manual login</h3>
+    <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username">
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        <br>
+        <input type="submit" value="Log in">
+    </form>
+
+    <script src="login_script.js"></script>
+</body>
+
+</html>
