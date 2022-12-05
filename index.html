@@ -19,12 +19,25 @@
         };
       </script>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v15.0&appId=1129229844400968&autoLogAppEvents=1" nonce="eFcDDiF2"></script>
+    <script async defer src="https://accounts.google.com/gsi/client" async defer></script>
     <h1>Mayvene</h1>
     <p>Spreading knowledge, life experiences, and gaining a better understanding of the universe around us</p>
 
     <h2>Log in</h2>
     <div class="fb-login-button" data-width="" data-size="medium" data-button-type="login_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="false"></div>
-    <button id="google-button">Log in with Google</button>
+    <div id="g_id_onload"
+         data-client_id="YOUR_GOOGLE_CLIENT_ID"
+         data-login_uri="https://your.domain/your_login_endpoint"
+         data-auto_prompt="false">
+      </div>
+      <div class="g_id_signin"
+         data-type="standard"
+         data-size="large"
+         data-theme="outline"
+         data-text="sign_in_with"
+         data-shape="rectangular"
+         data-logo_alignment="left">
+      </div>
     <button id="twitter-button">Log in with Twitter</button>
 
     <h3>Manual login</h3>
