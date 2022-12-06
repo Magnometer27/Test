@@ -1,12 +1,25 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-    <title>Mayvene - Spreading knowledge, life experiences, and gaining a better understanding of the universe around us</title>
-    <link rel="stylesheet" href="login_style.css">
-</head>
-
-<body>
+<html lang="en">
+  <head>
+    <meta
+      charset="UTF-8"
+      ,
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+    <link rel="stylesheet" href="login1.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div id="fb-root"></div>
     <script>
         window.fbAsyncInit = function() {
@@ -20,39 +33,82 @@
       </script>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v15.0&appId=1129229844400968&autoLogAppEvents=1" nonce="eFcDDiF2"></script>
     <script async defer src="https://accounts.google.com/gsi/client" async defer></script>
-    <h1>Mayvene</h1>
-    <p>Spreading knowledge, life experiences, and gaining a better understanding of the universe around us</p>
+    <div class="box">
+      <h1 class="title">
+        <a class="title-link" href="../index.html"> Mayvene </a>
+      </h1>
+      <p class="text">
+        Spreading knowledge, life experiences, and gaining <br />a better
+        <u>understanding</u> of the universe around us
+      </p>
+    </div>
 
-    <h2>Log in</h2>
-    <div class="fb-login-button" data-width="" data-size="medium" data-button-type="login_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="false"></div>
-    <div id="g_id_onload"
+    <div class="container">
+      <form action="###needs to be made###">
+        <div class="row">
+          <h2 style="text-align: center">
+            Login with Social Media or Manually
+          </h2>
+          <div class="vl">
+            <span class="vl-innertext">or</span>
+          </div>
+          <div class="col">
+            <div class="fb-login-button" data-width="" data-size="medium" data-button-type="login_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="false"></div>
+            </a>
+            <a href="###needs to be added through api###" class="twitter btn">
+              <i class="fa fa-twitter fa-fw"></i> Login with Twitter
+            </a>
+            <div id="g_id_onload"
          data-client_id="YOUR_GOOGLE_CLIENT_ID"
          data-login_uri="https://your.domain/your_login_endpoint"
          data-auto_prompt="false">
       </div>
       <div class="g_id_signin"
-         data-width=20
+         data-width="20"
          data-type="standard"
          data-size="medium"
          data-theme="outline"
-         data-text="sign_in_with"
+         data-text="Login_with"
          data-shape="rectangular"
          data-logo_alignment="center">
       </div>
-    <button id="twitter-button">Log in with Twitter</button>
+            </a>
+          </div>
 
-    <h3>Manual login</h3>
-    <form>
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username">
-        <br>
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password">
-        <br>
-        <input type="submit" value="Log in">
-    </form>
+          <div class="col">
+            <div class="hide-md-lg">
+              <p>Or sign in manually:</p>
+            </div>
 
-    <script src="login_script.js"></script>
-</body>
+            <form action = "signup.inc.php" method = "post">
+            <input
+              type="text"
+              name="uid"
+              placeholder="Username"
+              required
+            />
+            <input
+              type="password"
+              name="pwd"
+              placeholder="Password"
+              required
+            />
+            </form>
+            <input type="submit" value="Login" />
+          </div>
+        </div>
+      </form>
+    </div>
 
+    <div class="bottom-container">
+      <div class="row">
+        <div class="col">
+          <a href="#" style="color: white" class="btn">Sign up</a>
+        </div>
+        <div class="col">
+          <a href="#" style="color: white" class="btn">Forgot password?</a>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
